@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane id="gamescreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.StartScreenController">
+   <center>
+      <VBox id="playercreate" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Player 1:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="playerOneNameTextField" promptText="Name" />
+                  <CheckBox fx:id="playerOneXCheckBox" alignment="CENTER" mnemonicParsing="false" text="X">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="playerOneOCheckBox" mnemonicParsing="false" text="O">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <Label text="Player 2:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="playerTwoNameTextField" promptText="Name" />
+                  <CheckBox fx:id="playerTwoXCheckBox" alignment="CENTER" mnemonicParsing="false" text="X">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="playerTwoOCheckBox" mnemonicParsing="false" text="O">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <Button fx:id="startButton" mnemonicParsing="false" onMouseClicked="#onStartButton" text="Start">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="25.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" text="ErrorLabel" textAlignment="CENTER" textFill="RED" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>

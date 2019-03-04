@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane id="gamescreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.EndScreenController">
+   <top>
+      <Label id="gameover" fx:id="label" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" text="GAME OVER" textFill="RED" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="64.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <HBox id="endbuttons" alignment="CENTER" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="playAgainButton" mnemonicParsing="false" onMouseClicked="#playAgain" text="Play Again">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="closeButton" mnemonicParsing="false" onMouseClicked="#close" text="Close">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="75.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>

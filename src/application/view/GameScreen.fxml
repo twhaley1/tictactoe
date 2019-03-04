@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane id="gamescreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.GameScreenController">
+   <left>
+      <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox id="gamepanel" alignment="CENTER" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="topLeftLabel" onMouseClicked="#topLeftClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <Line endY="100.0" startY="-100.0" strokeWidth="2.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="topMiddleLabel" onMouseClicked="#topMiddleClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Line endY="100.0" layoutX="292.0" layoutY="111.0" startY="-100.0" strokeWidth="2.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="topRightLabel" onMouseClicked="#topRightClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Line endX="175.0" startX="-175.0" strokeWidth="2.0" />
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="middleLeftLabel" onMouseClicked="#middleLeftClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <Line endY="100.0" startY="-100.0" strokeWidth="2.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="middleMiddleLabel" onMouseClicked="#middleMiddleClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Line endY="100.0" layoutX="292.0" layoutY="111.0" startY="-100.0" strokeWidth="2.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="middleRightLabel" onMouseClicked="#middleRightClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Line endX="175.0" startX="-175.0" strokeWidth="2.0" />
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="bottomLeftLabel" onMouseClicked="#bottomLeftClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <Line endY="100.0" startY="-100.0" strokeWidth="2.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="bottomMiddleLabel" onMouseClicked="#bottomMiddleClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Line endY="100.0" layoutX="292.0" layoutY="111.0" startY="-100.0" strokeWidth="2.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" maxWidth="64.0" minWidth="64.0">
+                     <children>
+                        <Label fx:id="bottomRightLabel" onMouseClicked="#bottomRightClicked" text="X">
+                           <font>
+                              <Font name="System Bold" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label fx:id="topLabel" text="Player Info" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Label fx:id="bottomLabel" alignment="CENTER" contentDisplay="CENTER" text="TIME INFO" textAlignment="CENTER" textFill="RED" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="15.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </bottom>
+</BorderPane>
