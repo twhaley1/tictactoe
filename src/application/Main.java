@@ -56,8 +56,7 @@ public class Main extends Application {
 	/**
 	 * Launches the application.
 	 * 
-	 * @param args
-	 *            not used
+	 * @param args not used
 	 */
 	public static void main(String[] args) {
 		launch(args);

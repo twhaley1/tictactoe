@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane id="gamescreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.StartScreenController">
+<BorderPane id="gamescreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.StartScreenController">
    <center>
-      <VBox id="playercreate" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/styles/styles.css" BorderPane.alignment="CENTER">
+      <VBox id="playercreate" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@../../../../../Desktop/Tic-Tac-Toe/application/src/application/application.css" BorderPane.alignment="CENTER">
          <children>
             <Label text="Player 1:">
                <font>
