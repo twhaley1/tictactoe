@@ -30,7 +30,7 @@ public class Main extends Application {
 	 * @postcondition none
 	 * 
 	 * @param primaryStage
-	 *            The main stage to set for the application.
+	 *            The main stage to set for the application
 	 * 
 	 */
 	@Override
